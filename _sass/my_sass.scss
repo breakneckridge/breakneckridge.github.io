@@ -1,0 +1,110 @@
+
+$base-font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;
+
+$base-font-size:   16px !default;
+
+$base-font-weight: 400 !default;
+
+$small-font-size:  $base-font-size * 0.875 !default;
+
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     32px !default;
+
+$green-color: #233E2A;  // #374F31;
+$grey-color: #D8D8D8;
+$dark-grey-color: #333333;
+
+$good-color: #64C964;
+$good-color-40: #AAD2AA;
+$med-color: #DCC81E;
+$med-color-40: #DAD28E;
+$bad-color: #C96464;
+$bad-color-40: #D2AAAA;
+
+// Width of the content area
+$content-width:    780px !default;
+$on-palm:          600px !default;
+$on-laptop:        780px !default;
+
+
+body {
+  background-color: $green-color;
+  background-image: url('background.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+       -moz-font-feature-settings: "kern" 1;
+         -o-font-feature-settings: "kern" 1;
+            font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+.header-container, .content-container, .footer-container {
+  max-width: $content-width; 
+  margin: 0 auto; 
+}
+
+.header-container {
+  color: $grey-color;
+  h1 {
+    text-shadow: 0 0 20px black;
+  }
+  padding-left: 16px;
+  margin-bottom: 400px;
+}
+
+.content-subcontainer {
+  background-color: $grey-color;
+  border-radius: 16px;
+  box-shadow: 0 0 20px 0;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.hike {
+
+}
+
+.tag {
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+   border-radius: 5px;
+  padding: 2px 3px 2px;
+  margin-right: 3px;
+  white-space: nowrap;
+}
+
+.good-tag {
+  @extend .tag;
+  background: $good-color-40;
+}
+
+.med-tag {
+  @extend .tag;
+  background: $med-color-40;
+}
+
+.bad-tag {
+  @extend .tag;
+  background: $bad-color-40;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.footer-container {
+  background-color: $grey-color;
+  border-radius: 16px;
+  box-shadow: 0 0 20px 0;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+
+

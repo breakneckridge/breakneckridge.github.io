@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<div class="content-subcontainer">
+  <h2>Breakneck Ridge and why you don’t want to hike it</h2>
+
+  <p>Ok, Breakneck Ridge is a pretty popular hike but you probably don’t want to hike it because:</p>
+
+  <ul>
+    <li>It’s a packed and <b>dangerous parking situation</b> along a busy highway and the <b>trail is crowded like a rush-hour Manhattan sidewalk</b>. If you were aiming for a getaway in nature, it’s probably not the natural environment you were aiming for.</li>
+
+    <li>If you’re debating whether you should hike Breakneck, it’s probably not the hike for you.  <b>It’s a seriously strenuous, long, uphill scramble</b> requiring a steady balance, a lot of endurance, and pulling yourself up with your hands.  Under-prepared hikers get injured on a near-daily basis and need to be rescued, which is a real bummer for everyone and <a href="https://www.timesunion.com/hudsonvalley/outdoors/article/Unprepared-hikers-Cold-Spring-rescue-17021137.php">a serious drain on local resources</a>.</li>
+
+    <li>The trail gets thousands of visitors a day in peak seasons and the damage to <b>the natural environment is immense</b>.  The trail is becoming ever wider, natural fauna is being trampled and broken, and without it, the mountainside is being washed away by erosion.  The area just can’t sustain as many visitors as it gets.</li>
+  </ul>
+
+  <p><em>If you're just looking for a place to hike and Breakneck was your default, there are lots of other great alternatives offering a challenge and great views.  You're strongly encouraged to do your part, try a different hike, and lessen the impact on Breakneck Ridge.</em></p>
+</div>
+
+<div class="content-subcontainer">
+  <h2>If you were going to take MetroNorth to the hike</h2>
+
+  <ul>
+    <li><a href="https://www.thrillist.com/lifestyle/new-york/best-hikes-in-new-york-using-metro-north">Here are some great alternatives from an article from Thrillist</a></li>
+    <li><a href="https://www.nynjtc.org/news/five-trainfriendly-trails-less-2-hours-new-york-city">Some more info and suggestions from the NY/NJ Trail Conference.</a></li>
+  </ul>
+</div>
+
+<div class="content-subcontainer">
+<h2>If you were going to drive to the hike</h2>
+  
+
+<p><em>The website <a href="https://hikethehudsonvalley.com/the-hikes/">Hike the Hudson Valley</a> has a ton of great options.  Highly recommended.</em></p>
+
+<p>If you’re looking for a few curated recommendations that are also moderate to difficult with great views in the same area as Breakneck, consider:</p>
+
+<div class="hike-list">
+  <div class="hike">
+    {% assign sorted_hikes = site.hikes | sort: 'order' %}
+    {% for hike in sorted_hikes %}
+      <h3>{{hike.name}}</h3>
+      {% for good_tag in hike.good_tags %}
+        <span class="good-tag">{{good_tag}}</span>
+      {% endfor %}
+      {% for med_tag in hike.med_tags %}
+        <span class="med-tag">{{med_tag}}</span>
+      {% endfor %}
+      {% for bad_tag in hike.bad_tags %}
+        <span class="bad-tag">{{bad_tag}}</span>
+      {% endfor %}
+      <p>Difficulty: {{ hike.difficulty }}</p>
+      <p>Links</p>
+      {% for link in hike.links %}
+        <ul>
+          <li><a href={{link.url}}>{{link.text}}</a></li>
+        </ul>
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>
+
+
