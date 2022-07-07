@@ -1,6 +1,7 @@
 ---
 order: 1
 name: Bear Mountain
+pic: "bear.webp"
 good_tags:
   - Great views
   - Many trail options

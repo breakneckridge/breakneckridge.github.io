@@ -1,6 +1,7 @@
 ---
 order: 5
 name: Storm King Mountain
+pic: "crows.webp"
 good_tags:
   - Amazing views in several directions
   - Multiple routes

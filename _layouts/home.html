@@ -43,6 +43,9 @@ layout: default
     {% assign sorted_hikes = site.hikes | sort: 'order' %}
     {% for hike in sorted_hikes %}
       <h3>{{hike.name}}</h3>
+      {% if hike.pic %}
+        <img src="assets/{{hike.pic}}"><br>
+      {% endif %}
       {% for good_tag in hike.good_tags %}
         <span class="good-tag">{{good_tag}}</span>
       {% endfor %}

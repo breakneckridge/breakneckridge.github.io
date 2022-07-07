@@ -1,6 +1,7 @@
 ---
 order: 7
-name: Anythony's Nose
+name: Anthony's Nose
+pic: "anthony.webp"
 good_tags:
   - Good views
 med_tags:
