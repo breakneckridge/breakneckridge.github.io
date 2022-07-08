@@ -29,40 +29,39 @@ layout: default
 </div>
 
 <div class="content-subcontainer">
-<h2>If you were going to drive to the hike</h2>
-  
-<p><a href="https://www.timeout.com/newyork/things-to-do/the-best-hiking-near-nyc">This article of the <i>22 Best Hikes near NYC</i></a> is a great set of options.</p>
+  <h2>If you were going to drive to the hike</h2>
+  <p><a href="https://www.timeout.com/newyork/things-to-do/the-best-hiking-near-nyc">This article of the <i>22 Best Hikes near NYC</i></a> is a great set of options.</p>
+  <p><em>The website <a href="https://hikethehudsonvalley.com/the-hikes/">Hike the Hudson Valley</a> has a ton of great options.  Highly recommended.</em></p>
+</div>
 
-
-<p><em>The website <a href="https://hikethehudsonvalley.com/the-hikes/">Hike the Hudson Valley</a> has a ton of great options.  Highly recommended.</em></p>
-
-<p>If you’re looking for a few curated recommendations that are also moderate to difficult with great views in the same area as Breakneck, consider:</p>
-
-<div class="hike-list">
-  <div class="hike">
-    {% assign sorted_hikes = site.hikes | sort: 'order' %}
-    {% for hike in sorted_hikes %}
-      <h3>{{hike.name}}</h3>
-      {% if hike.pic %}
-        <img src="assets/{{hike.pic}}"><br>
-      {% endif %}
-      {% for good_tag in hike.good_tags %}
-        <span class="good-tag">{{good_tag}}</span>
+<div class="content-subcontainer">
+  <h2>If you’re just looking for a few suggestions in the same area as Breakneck, consider:</h2>
+  <div class="hike-list">
+    <div class="hike">
+      {% assign sorted_hikes = site.hikes | sort: 'order' %}
+      {% for hike in sorted_hikes %}
+        <h3>{{hike.name}}</h3>
+        {% if hike.pic %}
+          <img src="assets/{{hike.pic}}"><br>
+        {% endif %}
+        {% for good_tag in hike.good_tags %}
+          <span class="good-tag">{{good_tag}}</span>
+        {% endfor %}
+        {% for med_tag in hike.med_tags %}
+          <span class="med-tag">{{med_tag}}</span>
+        {% endfor %}
+        {% for bad_tag in hike.bad_tags %}
+          <span class="bad-tag">{{bad_tag}}</span>
+        {% endfor %}
+        <p>Difficulty: {{ hike.difficulty }}</p>
+        <p>Links</p>
+        {% for link in hike.links %}
+          <ul>
+            <li><a href={{link.url}}>{{link.text}}</a></li>
+          </ul>
+        {% endfor %}
       {% endfor %}
-      {% for med_tag in hike.med_tags %}
-        <span class="med-tag">{{med_tag}}</span>
-      {% endfor %}
-      {% for bad_tag in hike.bad_tags %}
-        <span class="bad-tag">{{bad_tag}}</span>
-      {% endfor %}
-      <p>Difficulty: {{ hike.difficulty }}</p>
-      <p>Links</p>
-      {% for link in hike.links %}
-        <ul>
-          <li><a href={{link.url}}>{{link.text}}</a></li>
-        </ul>
-      {% endfor %}
-    {% endfor %}
+    </div>
   </div>
 </div>
 
