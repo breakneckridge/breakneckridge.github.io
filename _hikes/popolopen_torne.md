@@ -1,6 +1,7 @@
 ---
 order: 6
 name: Popolopen Torne
+pic: popolopen2.webp
 good_tags:
   - Amazing views
   - Fun to say
