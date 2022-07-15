@@ -1,7 +1,7 @@
 ---
 order: 5
 name: Storm King Mountain
-pic: "crows.webp"
+pic: "stormking.webp"
 good_tags:
   - Amazing views in several directions
   - Multiple routes
@@ -13,7 +13,7 @@ bad_tags:
 difficulty: Moderate
 links:
   - text: NY/NJ Trails Conference page
-    url: "https://www.nynjtc.org/hike/crows-nest-mountainhowell-trail-route-9w"  
+    url: "https://www.nynjtc.org/park/storm-king-state-park-2"  
   - text: Hike the Hudson Valley page
     url: "https://hikethehudsonvalley.com/hikes/storm-king/"
 ---
