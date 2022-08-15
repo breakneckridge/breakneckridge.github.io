@@ -10,7 +10,7 @@ layout: default
   <ul>
     <li>It’s a packed and <b>dangerous parking situation</b> along a busy highway and the <b>trail is crowded like a rush-hour Manhattan sidewalk</b>. If you were aiming for a getaway in nature, it’s probably not the natural environment you were aiming for.</li>
 
-    <li>If you’re debating whether you should hike Breakneck, it’s probably not the hike for you.  <b>It’s a seriously strenuous, long, uphill scramble</b> requiring a steady balance, a lot of endurance, and pulling yourself up with your hands.  Under-prepared hikers get injured on a near-daily basis and need to be rescued, which is a real bummer for everyone and <a href="https://www.timesunion.com/hudsonvalley/outdoors/article/Unprepared-hikers-Cold-Spring-rescue-17021137.php">a serious drain on local resources</a>.</li>
+    <li>If you’re debating whether you should hike Breakneck, it’s probably not the hike for you.  <b>It’s a seriously strenuous, long, uphill scramble</b> requiring a steady balance, a lot of endurance, and pulling yourself up with your hands.  Under-prepared hikers get injured on a near-daily basis and need to be rescued, which is a real bummer for everyone and <a href="https://www.timesunion.com/hudsonvalley/outdoors/article/Unprepared-hikers-Cold-Spring-rescue-17021137.php" onclick="captureOutboundLink('https://www.timesunion.com/hudsonvalley/outdoors/article/Unprepared-hikers-Cold-Spring-rescue-17021137.php'); return false;">a serious drain on local resources</a>.</li>
 
     <li>The trail gets thousands of visitors a day in peak seasons and the damage to <b>the natural environment is immense</b>.  The trail is becoming ever wider, natural fauna is being trampled and broken, and without it, the mountainside is being washed away by erosion.  The area just can’t sustain as many visitors as it gets.</li>
   </ul>
@@ -22,19 +22,19 @@ layout: default
   <h2>If you were going to take MetroNorth to the hike</h2>
 
   <ul>
-    <li><a href="https://www.thrillist.com/lifestyle/new-york/best-hikes-in-new-york-using-metro-north">"The Best Metro-North Accessible Hikes in New York" from Thrillist</a></li>
-    <li><a href="https://www.nynjtc.org/hike-finder-map#!/">The NY/NJ Trail Conference has a great tool</a> to find hikes based on difficulty, distance, public transit accessibility, etc. Highly recommended.</li>
-    <li><a href="https://www.timeout.com/newyork/things-to-do/the-best-hiking-near-nyc">11 of the Hikes on this list of <i>22 Best Hikes near NYC</i> are available from MetroNorth.</a></li>
-    <li><a href="https://www.nynjtc.org/news/five-trainfriendly-trails-less-2-hours-new-york-city">"Five Train-Friendly Trails Less Than 2 Hours from New York City" from the NY/NJ Trail Conference.</a></li>
+    <li><a href="https://www.thrillist.com/lifestyle/new-york/best-hikes-in-new-york-using-metro-north" onclick="captureOutboundLink('https://www.thrillist.com/lifestyle/new-york/best-hikes-in-new-york-using-metro-north'); return false;">"The Best Metro-North Accessible Hikes in New York" from Thrillist</a></li>
+    <li><a href="https://www.nynjtc.org/hike-finder-map#!/" onclick="captureOutboundLink('https://www.nynjtc.org/hike-finder-map#!/'); return false;">The NY/NJ Trail Conference has a great tool</a> to find hikes based on difficulty, distance, public transit accessibility, etc. Highly recommended.</li>
+    <li><a href="https://www.timeout.com/newyork/things-to-do/the-best-hiking-near-nyc" onclick="captureOutboundLink('https://www.timeout.com/newyork/things-to-do/the-best-hiking-near-nyc'); return false;">11 of the Hikes on this list of <i>22 Best Hikes near NYC</i> are available from MetroNorth.</a></li>
+    <li><a href="https://www.nynjtc.org/news/five-trainfriendly-trails-less-2-hours-new-york-city" onclick="captureOutboundLink('https://www.nynjtc.org/news/five-trainfriendly-trails-less-2-hours-new-york-city'); return false;">"Five Train-Friendly Trails Less Than 2 Hours from New York City" from the NY/NJ Trail Conference.</a></li>
   </ul>
 </div>
 
 <div class="content-subcontainer">
   <h2>If you were going to drive to the hike</h2>
   <ul>
-    <li><a href="https://www.nynjtc.org/hike-finder-map#!/">The NY/NJ Trail Conference has a great tool</a> to find hikes based on difficulty, distance, public transit accessibility, etc. Highly recommended.</li>
-    <li><a href="https://www.timeout.com/newyork/things-to-do/the-best-hiking-near-nyc">This article of the <i>22 Best Hikes near NYC</i></a> is a great set of options.</li>
-    <li><em>The website <a href="https://hikethehudsonvalley.com/the-hikes/">Hike the Hudson Valley</a> has a ton of great options.  Highly recommended.</em></li>
+    <li><a href="https://www.nynjtc.org/hike-finder-map#!/" onclick="captureOutboundLink('https://www.nynjtc.org/hike-finder-map#!/'); return false;">The NY/NJ Trail Conference has a great tool</a> to find hikes based on difficulty, distance, public transit accessibility, etc. Highly recommended.</li>
+    <li><a href="https://www.timeout.com/newyork/things-to-do/the-best-hiking-near-nyc" onclick="captureOutboundLink('https://www.timeout.com/newyork/things-to-do/the-best-hiking-near-nyc'); return false;">This article of the <i>22 Best Hikes near NYC</i></a> is a great set of options.</li>
+    <li><em>The website <a href="https://hikethehudsonvalley.com/the-hikes/" onclick="captureOutboundLink('https://hikethehudsonvalley.com/the-hikes/'); return false;">Hike the Hudson Valley</a> has a ton of great options.  Highly recommended.</em></li>
   </ul>
 </div>
 
@@ -61,7 +61,7 @@ layout: default
         <p>Links</p>
         {% for link in hike.links %}
           <ul>
-            <li><a href={{link.url}}>{{link.text}}</a></li>
+            <li><a href={{link.url}} onclick="captureOutboundLink('{{link.url}}'); return false;">{{link.text}}</a></li>
           </ul>
         {% endfor %}
       {% endfor %}
